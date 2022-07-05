@@ -20,11 +20,11 @@ module.exports = {
          {
             id: 8,
             title: 'Foundation dasturida talabalar qanday fanlarni o\'tadilar? \n',
-            data: "🔰 2021-yil sentabr oyida birinchi kurs talabalari eng yaxshi Britaniya standartlari asosida ishlab chiqilgan Foundation dasturida oʻqiydilar. Jamg'armaning bir qismi sifatida ular quyidagilarni o'rganadilar:\n\n✅	Xalqaro ingliz tili \n\n✅	Akademik ko'nikmalar \n\n✅	Biznes va menejmentga kirish \n\n✅	Biznesda miqdoriy usullar."
+            data: "🔰 2021-yil sentabr oyida birinchi kurs talabalari eng yaxshi Britaniya standartlari asosida ishlab chiqilgan Foundation dasturida oʻqiydilar. Jamg'armaning bir qismi sifatida ular quyidagilarni o'rganadilar:\n\n✅	Xalqaro ingliz tili \n\n✅	Akademik ko'nikmalar \n\n✅	Biznes va menejmentga kirish \n\n✅	Biznesda miqdoriy usullar.\n\n✅ Batafsil: https://bmu-edu.uz/ru/programmes/"
          },
          {
             id: 9,
-            title: 'Foundation dasturida talabalar qanday fanlarni o\'tadilar? \n',
+            title: 'Qo\'shimcha va boshqa ma\'lumotlar  \n',
             data: "✅	Telegram Chat:  @BMUcallcenter \n\n✅	Website:  www.bmu-edu.uz  \n\n✅	Phone:  +99895 511-99-99 \n\n✅	Instagram:  @bmuedu.\n\n✅	Telegram Channel:  t.me/bmuedu."
          }
       ],
@@ -46,12 +46,12 @@ module.exports = {
          },
          {
             id: 8,
-            title: 'Foundation dasturida talabalar qanday fanlarni o\'tadilar? \n',
-            data: "🔰 2021-yil sentabr oyida birinchi kurs talabalari eng yaxshi Britaniya standartlari asosida ishlab chiqilgan Foundation dasturida oʻqiydilar. Jamg'armaning bir qismi sifatida ular quyidagilarni o'rganadilar:\n\n✅	Xalqaro ingliz tili \n\n✅	Akademik ko'nikmalar \n\n✅	Biznes va menejmentga kirish \n\n✅	Biznesda miqdoriy usullar."
+            title: 'What subjects will students in the Foundation Program take? \n',
+            data: "🔰	In September 2021, first year students will study in the Foundation programme, developed according to the best British standards.  As part of the Foundation, they will study the following:\n\n✅	International English \n\n✅	Academic Skills \n\n✅	Introduction to Business and Management \n\n✅	Quantitative Methods in Business.\n\n✅ More: https://bmu-edu.uz/ru/programmes/"
          },
          {
             id: 9,
-            title: 'Foundation dasturida talabalar qanday fanlarni o\'tadilar? \n',
+            title: 'Additional and other information\n',
             data: "✅	Telegram Chat:  @BMUcallcenter \n\n✅	Website:  www.bmu-edu.uz  \n\n✅	Phone:  +99895 511-99-99 \n\n✅	Instagram:  @bmuedu.\n\n✅	Telegram Channel:  t.me/bmuedu."
          }
       ],
@@ -73,13 +73,13 @@ module.exports = {
          },
          {
             id: 8,
-            title: 'Foundation dasturida talabalar qanday fanlarni o\'tadilar? \n',
-            data: "🔰 2021-yil sentabr oyida birinchi kurs talabalari eng yaxshi Britaniya standartlari asosida ishlab chiqilgan Foundation dasturida oʻqiydilar. Jamg'armaning bir qismi sifatida ular quyidagilarni o'rganadilar:\n\n✅	Xalqaro ingliz tili \n\n✅	Akademik ko'nikmalar \n\n✅	Biznes va menejmentga kirish \n\n✅	Biznesda miqdoriy usullar."
+            title: 'Какой диплом получат студенты университета по окончании учебы? \n',
+            data: "🔰	В сентябре 2021 года студенты первого курса будут обучаться по программе Foundation, разработанной в соответствии с лучшими британскими стандартами.  В рамках Фонда они будут изучать следующее:\n\n✅	Международный английский \n\n✅	Академические Навыки \n\n✅	Введение в бизнес и управление \n\n✅	Количественные методы в бизнесе. \n\n✅ Подробнее: https://bmu-edu.uz/ru/programmes/"
          },
          {
             id: 9,
-            title: 'Foundation dasturida talabalar qanday fanlarni o\'tadilar? \n',
-            data: "✅	Telegram Chat:  @BMUcallcenter \n\n✅	Website:  www.bmu-edu.uz  \n\n✅	Phone:  +99895 511-99-99 \n\n✅	Instagram:  @bmuedu.\n\n✅	Telegram Channel:  t.me/bmuedu."
+            title: 'Дополнительная  информация \n',
+            data: "✅	Telegram-чат:  @BMUcallcenter \n\n✅	Сайт:  www.bmu-edu.uz  \n\n✅	Телефон:  +99895 511-99-99 \n\n✅	Инстаграм:  @bmuedu.\n\n✅	Telegram-канал:  t.me/bmuedu."
          }
       ]
    },
