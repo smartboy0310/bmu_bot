@@ -122,7 +122,7 @@ module.exports = {
 		],
       [
 			{
-				text: '📝 Ask custom quest',
+				text: '📝 Ask custom question',
 			},
 			{
 				text:" 👆 Additional information"
@@ -166,7 +166,7 @@ module.exports = {
 		},
 		{
 			id: 8,
-			text: '❇️ Foundation program subjects'
+			text: '❇️ Foundation program subjectsion'
 		},
 		{
 			id: 9,
@@ -225,7 +225,7 @@ module.exports = {
    ru_category: [
 		{
 			id: 1,
-			text: '❇️ Допуск',
+			text: '❇️ Прием',
 		},
 		{
 			id: 2,

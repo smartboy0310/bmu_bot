@@ -17,6 +17,7 @@ bot.use(require('./Composer/editLang'));
 bot.use(require('./Composer/question'));
 bot.use(require('./Composer/category'));
 bot.use(require('./Composer/back'));
+bot.use(require('./Composer/subCategory'));
 bot.use(require('./Composer/general'));
 
 
