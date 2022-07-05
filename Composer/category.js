@@ -45,7 +45,7 @@ for (let i = 0; i < category.en_category.length; i++) {
 			});
 		} else {
 			const findInfo = data.category_data.en_data.find(
-				(e) => e.id == category.en_category[i].id,
+				(e) => e.id == category.en_category[i]?.id,
 			);
 			await ctx.replyWithHTML(
 				`<b>${findInfo?.title}</b>\n${findInfo?.data}`,
@@ -69,7 +69,7 @@ for (let i = 0; i < category.ru_category.length; i++) {
 			});
 		} else {
 			const findInfo = data.category_data.ru_data.find(
-				(e) => e.id == category.ru_category[i].id,
+				(e) => e.id == category.ru_category[i]?.id,
 			);
 			await ctx.replyWithHTML(
 				`<b>${findInfo?.title}</b>\n${findInfo?.data}`,

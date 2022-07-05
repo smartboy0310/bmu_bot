@@ -13,7 +13,7 @@ module.exports = {
 				text: '❇️ Dasturlar',
 			},
 			{
-				text: '❇️ ACCA',
+				text: '❇️ ACСА',
 			},
 		],
 		[
@@ -21,15 +21,24 @@ module.exports = {
 				text: '❇️ BMU ga o’qishni ko’chirish',
 			},
 			{
-				text: '❇️ FAQ:',
+				text: '❇️ Ko\'p so\'raladigan savollar:',
 			},
 		],
 		[
 			{
-				text: '❇️ Pre-foundation',
+				text: '❇️ Tayyorlov kurslari',
 			},
 			{
+				text: '❇️ Foundation programmasi fanlari'
+			}
+			
+		],
+		[
+			{
 				text: '📝 Maxsus savol berish',
+			},
+			{
+				text: '👆 Qo\'shimcha ma\'lumotlar',
 			},
 		],
       [
@@ -54,7 +63,7 @@ module.exports = {
 		},
 		{
 			id: 4,
-			text: '❇️ ACCA',
+			text: '❇️ ACСА',
 		},
 		{
 			id: 5,
@@ -62,11 +71,19 @@ module.exports = {
 		},
 		{
 			id: 6,
-			text: '❇️ FAQ:',
+			text: '❇️ Ko\'p so\'raladigan savollar:',
 		},
 		{
 			id: 7,
-			text: '❇️ Pre-foundation',
+			text: '❇️ Tayyorlov kurslari',
+		},
+		{
+			id: 8,
+			text: '❇️ Foundation programmasi fanlari'
+		},
+		{
+			id: 9,
+			text: '👆 Qo\'shimcha ma\'lumotlar'
 		}
 	],
 
@@ -100,13 +117,21 @@ module.exports = {
 				text: '❇️ Pre-foundation',
 			},
 			{
-				text: '📝 Ask custom question',
+				text: '❇️ Foundation program subjectsion',
 			},
 		],
       [
 			{
-				text: '🔄 Change the language',
+				text: '📝 Ask custom quest',
 			},
+			{
+				text:" 👆 Additional information"
+			}
+		],
+		[
+			{
+				text:" 🔄 Change the language"
+			}
 		]
 	],
 
@@ -138,13 +163,21 @@ module.exports = {
 		{
 			id: 7,
 			text: '❇️ Pre-foundation',
+		},
+		{
+			id: 8,
+			text: '❇️ Foundation program subjects'
+		},
+		{
+			id: 9,
+			text: '👆 Additional information'
 		}
 	],
 
 	ru_keyboard: [
 		[
 			{
-				text: '❇️ Допуск',
+				text: '❇️ Прием',
 			},
 			{
 				text: '❇️ Гранты и стипендии',
@@ -155,7 +188,7 @@ module.exports = {
 				text: '❇️ Программы',
 			},
 			{
-				text: '❇️ ACCA',
+				text: '❇️ АССА',
 			},
 		],
 		[
@@ -163,7 +196,7 @@ module.exports = {
 				text: '❇️ Трансфер в БМУ',
 			},
 			{
-				text: '❇️ FAQ:',
+				text: '❇️ Часто задаваемые вопросы:',
 			},
 		],
 		[
@@ -171,10 +204,18 @@ module.exports = {
 				text: '❇️ Предварительный фундамент',
 			},
 			{
-				text: '📝 Задать пользовательский вопрос',
+				text: '❇️ Предметы программы Foundation',
 			},
 		],
       [
+			{
+				text: '📝 Задать пользовательский вопрос'
+			},
+			{
+				text: '👆 Дополнительная информация',
+			},
+		],
+		[
 			{
 				text: '🔄 Изменить язык',
 			},
@@ -196,7 +237,7 @@ module.exports = {
 		},
 		{
 			id: 4,
-			text: '❇️ ACCA',
+			text: '❇️ АССА',
 		},
 		{
 			id: 5,
@@ -204,11 +245,19 @@ module.exports = {
 		},
 		{
 			id: 6,
-			text: '❇️ FAQ:',
+			text: '❇️ Часто задаваемые вопросы:',
 		},
 		{
 			id: 7,
 			text: '❇️ Предварительный фундамент',
+		},
+		{
+			id: 8,
+			text: '❇️ Предметы программы Foundation'
+		},
+		{
+			id: 9,
+			text: '👆 Дополнительная информация'
 		}
 	],
 };
