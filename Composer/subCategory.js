@@ -12,10 +12,17 @@ for (let i = 0; i < subCategory.uz_subcategory.length; i++) {
 		const findInfo = data.subCate_data.uz_data.find(
 			(e) => e.id == subCategory.uz_subcategory[i].id,
 		);
-		
-			await ctx.replyWithHTML(
-				`<b>${findInfo?.title}</b>\n${findInfo?.data}`,
-			);
+			if(subCategory.uz_subcategory[i].text == '❇️ Manzil') {
+				await ctx.replyWithHTML(
+					`<b>${findInfo?.title}</b>\n${findInfo?.data}`,
+				);
+				await ctx.telegram.sendLocation(ctx.chat.id, findInfo?.x, findInfo.y)
+			}
+			else {
+				await ctx.replyWithHTML(
+					`<b>${findInfo?.title}</b>\n${findInfo?.data}`,
+				);
+			}
 		
 	});
 }
@@ -25,9 +32,18 @@ for (let i = 0; i < subCategory.en_subcategory.length; i++) {
 		const findInfo = data.subCate_data.en_data.find(
 			(e) => e.id == subCategory.en_subcategory[i].id,
 		);
-			await ctx.replyWithHTML(
-				`<b>${findInfo?.title}</b>\n${findInfo?.data}`,
-			);
+
+			if(subCategory.en_subcategory[i].text == '❇️ Location') {
+				await ctx.replyWithHTML(
+					`<b>${findInfo?.title}</b>\n${findInfo?.data}`,
+				);
+				await ctx.telegram.sendLocation(ctx.chat.id, findInfo?.x, findInfo.y)
+			}
+			else {
+				await ctx.replyWithHTML(
+					`<b>${findInfo?.title}</b>\n${findInfo?.data}`,
+				);
+			}
 		
 	});
 
@@ -40,9 +56,17 @@ for (let i = 0; i < subCategory.ru_subcategory.length; i++) {
 		const findInfo = data.subCate_data.ru_data.find(
 			(e) => e.id == subCategory.ru_subcategory[i].id,
 		);
+		if(subCategory.ru_subcategory[i].text == '❇️ Локация') {
 			await ctx.replyWithHTML(
 				`<b>${findInfo?.title}</b>\n${findInfo?.data}`,
 			);
+			await ctx.telegram.sendLocation(ctx.chat.id, findInfo?.x, findInfo.y)
+		}
+		else {
+			await ctx.replyWithHTML(
+				`<b>${findInfo?.title}</b>\n${findInfo?.data}`,
+			);
+		}
 		
 	});
 

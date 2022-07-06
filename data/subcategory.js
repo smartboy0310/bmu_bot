@@ -125,28 +125,40 @@ module.exports = {
 						text: "❇️ Men faqat bitta fanni o'rganishim mumkinmi (faqat ingliz tili / faqat matematika)?",
 					},
 					{
-						text: "❇️ Dasturda qancha vaqt o'qishim kerak?",
-					},
+						text: "❇️ Darslar qachon boshlanadi?"
+					}
+					
 				],
 				[
+					{
+						text: "❇️ Dasturda qancha vaqt o'qishim kerak?",
+					},
 					{
 						text: "❇️ Pre-Foundation dasturida qanday darajaga ega bo'lishim kerak?",
 					},
+					
+				],
+				[
 					{
 						text: '❇️ Kursni tugatgandan keyin IELTS imtihonini topshira olamanmi?',
 					},
-				],
-				[
 					{
 						text: "❇️ Pre-Foundation kursida qatnashganimdan so'ng qanday IELTS ball olishim mumkin?",
 					},
-					{
-						text: '❇️ Kirish imtihonlari bormi?',
-					},
+					
 				],
 				[
 					{
+						text: '❇️ Kirish imtihonlari bormi?',
+					},
+					{
 						text: "❇️ Agar men XX yoshda bo'lsam, sinfga qo'shila olamanmi?",
+					},
+
+				],
+				[
+					{
+						text: "❇️ O'qituvchi kim?"
 					},
 					{
 						text: '❇️ Jadval qanday?',
@@ -314,90 +326,98 @@ module.exports = {
 		},
 		{
 			id: 24,
-			text: '❇️ Dasturda qancha vaqt o\'qishim kerak?',
+			text: '❇️ Darslar qachon boshlanadi?',
 		},
 		{
 			id: 25,
-			text: '❇️ Pre-Foundation dasturida qanday darajaga ega bo\'lishim kerak?',
+			text: '❇️ Dasturda qancha vaqt o\'qishim kerak?',
 		},
 		{
 			id: 26,
-			text: '❇️ Kursni tugatgandan keyin IELTS imtihonini topshira olamanmi??',
+			text: '❇️ Pre-Foundation dasturida qanday darajaga ega bo\'lishim kerak?',
 		},
 		{
 			id: 27,
-			text: '❇️ Pre-Foundation kursida qatnashganimdan so\'ng qanday IELTS ball olishim mumkin?',
+			text: '❇️ Kursni tugatgandan keyin IELTS imtihonini topshira olamanmi?',
 		},
       {
 			id: 28,
-			text: '❇️ Kirish imtihonlari bormi?',
+			text: '❇️ Pre-Foundation kursida qatnashganimdan so\'ng qanday IELTS ball olishim mumkin?',
 		},
 		{
 			id: 29,
-			text: '❇️ Agar men XX yoshda bo\'lsam, sinfga qo\'shila olamanmi?',
+			text: '❇️ Kirish imtihonlari bormi?',
 		},
 		{
 			id: 30,
-			text: '❇️ Jadval qanday?',
+			text: '❇️ Agar men XX yoshda bo\'lsam, sinfga qo\'shila olamanmi?',
 		},
 		{
 			id: 31,
-			text: '❇️ Men stipendiya olsam bo\'ladimi?',
+			text: '❇️ O\'qituvchi kim?',
 		},
 		{
 			id: 32,
-			text: '❇️ BMU ning Pre-Foundation kursini tugatgandan so\'ng boshqa universitetga kirishim mumkinmi?',
+			text: '❇️ Jadval qanday?',
 		},
       {
 			id: 33,
-			text: '❇️ Yakuniy Pre-Foundation imtihonidan o\'ta olmasam nima bo\'ladi? Menda BMUda o\'qish imkoniyati bo\'ladimi?',
+			text: '❇️ Men stipendiya olsam bo\'ladimi?',
 		},
 		{
 			id: 34,
-			text: '❇️ Buning narxi qancha?',
+			text: '❇️ BMU ning Pre-Foundation kursini tugatgandan so\'ng boshqa universitetga kirishim mumkinmi?',
 		},
 		{
 			id: 35,
-			text: '❇️ Qachon / qanday to\'lashim mumkin?',
+			text: '❇️ Yakuniy Pre-Foundation imtihonidan o\'ta olmasam nima bo\'ladi? Menda BMUda o\'qish imkoniyati bo\'ladimi?',
 		},
 		{
 			id: 36,
-			text: '❇️ To\'lovni bo\'lib-bo\'lib (oyma-oy) qilsam bo\'ladimi?',
+			text: '❇️ Buning narxi qancha?',
 		},
 		{
 			id: 37,
-			text: '❇️ Qanday qilib ro\'yxatdan o\'tishim mumkin?',
+			text: '❇️ Qachon / qanday to\'lashim mumkin??',
 		},
       {
 			id: 38,
-			text: '❇️ Darslarni ertaroq ko\'chirish mumkinmi?',
+			text: '❇️ To\'lovni bo\'lib-bo\'lib (oyma-oy) qilsam bo\'ladimi?',
 		},
 		{
 			id: 39,
-			text: '❇️ Agar modul men uchun juda oson bo\'lib tuyulsa, keyingi bosqichga o\'tishim mumkinmi?',
+			text: '❇️ Qanday qilib ro\'yxatdan o\'tishim mumkin?',
 		},
 		{
 			id: 40,
-			text: '❇️ Bu yerda universitetda toʻlay olamanmi?',
+			text: '❇️ Darslarni ertaroq ko\'chirish mumkinmi?',
 		},
 		{
 			id: 41,
-			text: '❇️ Kursni tugatganimda sertifikat olamanmi?',
+			text: '❇️ Agar modul men uchun juda oson bo\'lib tuyulsa, keyingi bosqichga o\'tishim mumkinmi?',
 		},
 		{
 			id: 42,
-			text: '❇️ Agar men muvaffaqiyatsiz bo\'lsam, masalan. Pre-Intermediate darajasi uni qayta topshirishim kerakmi?',
+			text: '❇️ Bu yerda universitetda toʻlay olamanmi?',
 		},
       {
 			id: 43,
-			text: '❇️ Matematika fanida nechta daraja bor?',
+			text: '❇️ Kursni tugatganimda sertifikat olamanmi?',
 		},
 		{
 			id: 44,
-			text: '❇️ Agar men matematikani olishni rejalashtirmasam, matematikadan kirish imtihonidan o\'tishim kerakmi?',
+			text: '❇️ Agar men muvaffaqiyatsiz bo\'lsam, masalan. Pre-Intermediate darajasi uni qayta topshirishim kerakmi?',
 		},
 		{
 			id: 45,
+			text: '❇️ Matematika fanida nechta daraja bor?',
+		},
+		{
+			id: 46,
+			text: '❇️ Agar men matematikani olishni rejalashtirmasam, matematikadan kirish imtihonidan o\'tishim kerakmi?',
+		},
+		{
+			id: 47,
 			text: '❇️ Bir sinfda nechta o‘quvchi bor?',
 		}
 	],

@@ -5,7 +5,7 @@ const composer = new Composer()
 composer.hears('🔄 Tilni o’zgartirish', async (ctx) => {
 	await ctx.replyWithHTML(
 		`
-			<b><b> Tilni tanlang 🇺🇿 </b>  <b> Chouse language 🇬🇧 </b>  <b> Выберите язык 🇷🇺 </b></b>
+			<b><b> Tilni tanlang 🇺🇿 </b>  <b> Choose language 🇬🇧 </b>  <b> Выберите язык 🇷🇺 </b></b>
 		`,
 		{
 			reply_markup: JSON.stringify({
@@ -34,7 +34,7 @@ composer.hears('🔄 Tilni o’zgartirish', async (ctx) => {
 composer.hears('🔄 Change the language', async (ctx) => {
 	await ctx.replyWithHTML(
 		`
-			<b><b> Tilni tanlang 🇺🇿 </b>  <b> Chouse language 🇬🇧 </b>  <b> Выберите язык 🇷🇺 </b></b>
+			<b><b> Tilni tanlang 🇺🇿 </b>  <b> Choose language 🇬🇧 </b>  <b> Выберите язык 🇷🇺 </b></b>
 		`,
 		{
 			reply_markup: JSON.stringify({
@@ -63,7 +63,7 @@ composer.hears('🔄 Change the language', async (ctx) => {
 composer.hears('🔄 Изменить язык', async (ctx) => {
 	await ctx.replyWithHTML(
 		`
-			<b><b> Tilni tanlang 🇺🇿 </b>  <b> Chouse language 🇬🇧 </b>  <b> Выберите язык 🇷🇺 </b></b>
+			<b><b> Tilni tanlang 🇺🇿 </b>  <b> Choose language 🇬🇧 </b>  <b> Выберите язык 🇷🇺 </b></b>
 		`,
 		{
 			reply_markup: JSON.stringify({

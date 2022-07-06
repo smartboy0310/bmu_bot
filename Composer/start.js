@@ -6,7 +6,7 @@ composer.command('start', async (ctx) => {
 	try {
 		await ctx.replyWithHTML(
 			`
-		 <b> Tilni tanlang 🇺🇿 </b>  <b> Chouse language 🇬🇧 </b>  <b> Выберите язык 🇷🇺 </b>
+		 <b> Tilni tanlang 🇺🇿 </b>  <b> Choose language 🇬🇧 </b>  <b> Выберите язык 🇷🇺 </b>
     `,
 			{
 				reply_markup: {
