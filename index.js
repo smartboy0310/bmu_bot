@@ -11,6 +11,7 @@ bot.use(session());
 bot.context.lang = lang;
 
 bot.use(require('./Composer/start'));
+bot.use(require('./Composer/admin'));
 bot.use(require('./Composer/lang'));
 bot.use(require('./Composer/contact'));
 bot.use(require('./Composer/editLang'));
