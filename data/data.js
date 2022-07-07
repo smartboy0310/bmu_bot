@@ -670,139 +670,139 @@ const subCate_data = {
       },
       {
          id: 21,
-         title: 'Tayyorgarlik kurslari bormi?\n', 
-         data: `🔰 BMU asos solishidan oldingi kurslarni taqdim etadi, qoʻshimcha maʼlumotni quyidagi havolada topishingiz mumkin: \nhttps://bmu-edu.uz/english-centre/#pre-university
+         title: 'Существуют ли какие-либо подготовительные курсы?\n', 
+         data: `🔰 BMU предоставляет подготовительные курсы, вы можете найти более подробную информацию по следующей ссылке:  \nhttps://bmu-edu.uz/english-centre/#pre-university
          `
       },
       {
          id: 22,
-         title: 'Men nimani o\'rganaman?\n', 
-         data: `🔰 Pre-Foundation dasturida siz matematika va ingliz tilini o'rganasiz. Matematika darslari ingliz, rus va/yoki o‘zbek tillarida olib boriladi. Ingliz tili darslari odatda ingliz tilida olib boriladi.`
+         title: 'Что я буду изучать?\n', 
+         data: `🔰 В программе Pre-Foundation вы будете изучать математику и английский язык. Уроки математики будут проводиться на английском, русском и/или узбекском языках. Уроки английского обычно проводятся на английском языке.`
       },
       {
          id: 23,
-         title: 'Men faqat bitta fanni o\'rganishim mumkinmi (faqat ingliz tili / faqat matematika)?\n', 
-         data: `🔰 Ha, mumkin. Kursni boshlashdan oldin har bir fan bo'yicha daraja testini topshirasiz. Agar sizning darajangiz allaqachon etarlicha yuqori bo'lsa, bu mavzuni olishingiz shart emas`
+         title: 'Могу ли я изучать только один предмет (только английский язык / только математика)?\n', 
+         data: `🔰 Да, можно. Перед началом курса вы пройдете тест уровня по каждому предмету. Если ваш уровень уже достаточно высок, вам не нужно брать этот предмет.`
       },
       {
          id: 24,
-         title: "Darslar qachon boshlanadi?\n",
-         data: "🔰 Bahorgi qabul uchun darslarimiz 2022-yil 7-fevralda boshlanadi."
+         title: "Когда начинаются занятия?\n",
+         data: "🔰 Наши занятия для весеннего набора начинаются 7 февраля 2022 года."
       },
       {
          id: 25,
-         title: "Dasturda qancha vaqt o'qishim kerak?\n",
-         data: "🔰 Bu sizning darajangizga bog'liq. Bizning dasturimiz modullarga bo'lingan. Agar sizda ingliz tili yoki matematika yuqori darajada bo'lsa, faqat bitta yoki ikkita modulni olishingiz kerak bo'ladi. Agar sizning darajangiz pastroq bo'lsa, siz ko'proq modul olishingiz kerak bo'ladi. Har bir modul taxminan 15 hafta (4 oy) davom etadi. Daraja testini topshirishga kelganingizda, har bir fan uchun qancha modul kerakligini sizga maslahat beramiz."
+         title: "Как долго я должен учиться на программе?\n",
+         data: "🔰 Это зависит от вашего уровня. Наша программа разделена на модули. Если у вас уже есть высокий уровень английского или математики, вам может понадобиться только один или два модуля. Если ваш уровень ниже, вам нужно будет взять больше модулей. Каждый модуль длится около 15 недель (4 месяца). Когда вы придете сдавать тест уровня, мы сообщим вам, сколько модулей вам нужно для каждого предмета."
       },
       {
          id: 26,
-         title: 'Pre-Foundation dasturida qanday darajaga ega bo\'lishim kerak?\n',
-         data: "🔰 Eng kamida boshlang'ich ingliz tili darajasiga ega bo'lishingiz kerak va matematika uchun hech qanday talab yo'q. Ammo, agar siz pastroq darajaga ega bo'lsangiz, ko'proq vaqt o'rganishingiz kerak bo'ladi."
+         title: 'Какой уровень я должен иметь для обучения по программе Pre-Foundation?\n',
+         data: "🔰 У вас должен быть как минимум элементарный уровень английского языка, и нет требований по математике. Однако помните, что если у вас более низкий уровень, вам придется учиться дольше."
       },
       {
          id: 27,
-         title: "Kursni tugatgandan keyin IELTS imtihonini topshira olamanmi?\n",
-         data: "🔰 Ingliz tili dasturimizning yakuniy moduli imtihon strategiyalari va akademik ko‘nikmalarga qaratilgan. Ushbu modulda siz amaliyot va IELTS imtihoniga oid maslahatlar olasiz. Oldingi modullarda tahsil olayotgan talabalar odatiy umumiy ingliz tilidagi materiallar bilan birlashtirilgan ba'zi vaqti-vaqti bilan imtihon amaliyoti topshiriqlariga ega bo'lishadi.\n\n🔰  Esda tuting, IELTS imtihonini topshirishdan oldin umumiy ingliz tilini yaxshi bilish juda muhim, shuning uchun avvalo umumiy ingliz tilini yaxshilash ustida ishlashingiz kerak." 
+         title: "Могу ли я сдать IELTS после окончания курса?\n",
+         data: "🔰 Заключительный модуль нашей программы изучения английского языка фокусируется на стратегиях сдачи экзаменов и академических навыках. В этом модуле вы получите практику и советы по экзамену IELTS. Учащиеся, изучающие более ранние модули, будут иметь некоторые случайные практические экзаменационные задания в сочетании с их обычными материалами по английскому языку.\n\n🔰  Помните, что перед сдачей экзамена IELTS важно иметь хороший уровень общего английского, поэтому сначала вам следует поработать над улучшением своего общего английского." 
       },
       {
          id: 28,
-         title: "Pre-Foundation kursida qatnashganimdan so'ng qanday IELTS ball olishim mumkin?\n",
-         data: "🔰	Pre-Foundation dasturimizning yakuniy moduli talabalarni IELTS imtihoniga tayyorlaydi. Biz barcha talabalarni ushbu modulni topshirishga va IELTS imtihonida qatnashishga taklif qilamiz, chunki yetarlicha yuqori natijalarga erishgan talabalar universitet stipendiyalariga ega bo‘lishlari mumkin. \n\n🔰	Bizning IELTSga tayyorgarlik modulimiz bo‘yicha o‘qituvchilar yuqori malakaga ega va IELTS dan dars berishda ko‘p yillik tajribaga ega. Ular talabalarni IELTS imtihoniga imkon qadar tayyor bo'lishlari uchun qo'llaridan kelganini qiladilar. \n\n🔰 Biroq, na BMU, na bizning o'qituvchilarimiz yoki xodimlarimiz talabalar IELTS imtihonida to'plashlari mumkin bo'lgan ballar haqida hech qanday kafolat bermaydi. IELTS uchinchi tomon tashkilotlari tomonidan boshqariladi va shuning uchun BMU imtihondagi savollarni, imtihon sharoitlarini va individual talabalarning o'sha kuni qanday ishlashini nazorat qila olmaydi. Shunday ekan, IELTS ballari haqida va'da berish axloqiy emas.\n\n🔰 Ya'ni, IELTS ga tayyorgarlik moduli davomida talabalarga sinov imtihonlari topshiriladi, ular orqali ular rasmiy imtihonda olishlari mumkin bo'lgan ballarning umumiy ko'rsatkichini olishlari mumkin. Ushbu indikativ ballar har bir talaba uchun har xil bo'ladi va IELTS imtihoniga tayyorgarlikni boshlashdan oldin talabaning umumiy ingliz tilini bilish darajasiga bog'liq bo'ladi. Shuning uchun barcha talabalar IELTS modulini boshlashdan oldin kamida B1 (O'rta) umumiy ingliz tili darajasiga ega bo'lishlari muhim.\n\n🔰 Bu boradagi qo‘shimcha savollar bo‘lsa, Pre-Foundation dastur koordinatorlariga murojaat qilishingiz mumkin."
+         title: "Какой балл IELTS я могу получить после прохождения подготовительного курса?\n",
+         data: "🔰	Последний модуль нашей программы Pre-Foundation готовит студентов к сдаче экзамена IELTS. Мы призываем всех студентов пройти этот модуль и сдать экзамен IELTS, поскольку студенты, получившие достаточно высокие результаты, могут иметь право на получение университетской стипендии.\n\n🔰 Преподаватели нашего модуля подготовки к IELTS имеют высокую квалификацию и многолетний опыт преподавания IELTS. Они сделают все возможное, чтобы студенты были максимально готовы к сдаче экзамена IELTS.\n\n🔰 Тем не менее, ни BMU, ни наши преподаватели или сотрудники не дают никаких гарантий, что студенты смогут получить баллы на экзамене IELTS. IELTS администрируется сторонними организациями, и поэтому BMU не контролирует вопросы на экзамене, обстоятельства экзамена или то, как отдельные студенты могут выступать в течение дня. Таким образом, было бы неэтично давать обещания относительно результатов IELTS.\n\n🔰 Тем не менее, во время модуля подготовки к IELTS студенты будут сдавать пробные экзамены, в ходе которых они могут получить общее представление о баллах, которые они могут получить на официальном экзамене. Эти ориентировочные баллы будут разными для каждого студента и будут зависеть от существующего уровня общего английского языка студента до начала подготовки к IELTS. Поэтому важно, чтобы все студенты имели общий уровень английского языка не ниже B1 (Intermediate) до начала модуля IELTS.\n\n🔰 Любые дополнительные вопросы по этому поводу можно задать нашим координаторам программы Pre-Foundation."
       },
       {
          id: 29,
-         title: "Kirish imtihonlari bormi?\n",
-         data: "🔰	Kirish imtihoni yo‘q, lekin dasturga kirishdan oldin ingliz tili va matematika fanidan daraja imtihonidan o‘tishingiz kerak. Bu sizni qobiliyatingizga qarab to'g'ri sinflarga joylashtirishimizga yordam beradi."
+         title: "Есть ли вступительный экзамен?\n",
+         data: "🔰	Вступительного экзамена нет, но перед поступлением на программу необходимо пройти тест на уровень английского языка и математики. Это поможет нам разместить вас в нужных классах в соответствии с вашими способностями."
       },
       {
          id: 30,
-         title: "Agar men XX yoshda bo'lsam, sinfga qo'shila olamanmi?\n",
-         data: "🔰	10 va 11-sinf o‘quvchilari Pre-Foundation kursiga qo‘shilishlari mumkin. Bundan kichikroq o'quvchilar qo'shilish uchun 10-sinfgacha kutishlari kerak. Katta yoshdagi talabalar dasturga qo'shilishlari mumkin, lekin ularning sinfdoshlarining aksariyati 15-16 yoshda bo'lishini bilishlari kerak."
+         title: "Могу ли я присоединиться к классу, если мне исполнилось XX лет?\n",
+         data: "🔰	Учащиеся 10 и 11 классов могут присоединиться к подготовительному курсу. Учащиеся младше этого возраста должны дождаться 10-го класса, чтобы присоединиться. Учащиеся старшего возраста могут присоединиться к программе, но должны знать, что большинству их одноклассников будет 15-16 лет."
       },
       {
          id: 31,
-         title: "O'qituvchi kim? Ingliz tilini faqat ona tilida so'zlashuvchilar o'rgatadilarmi?\n",
-         data: "🔰	Dastur mahalliy va xalqaro o'qituvchilar tomonidan o'qitiladi."
+         title: "Кто учитель? Будет ли английский преподаваться только носителями языка?\n",
+         data: "🔰	Программа будет преподаваться как местными, так и иностранными учителями."
       },
       {
          id: 32,
-         title: "Jadval qanday?\n",
-         data: "🔰	Talabalar haftasiga to‘rt soat matematikani, haftasiga olti soat ingliz tilini o‘rganadilar. Shunday qilib, siz dushanbadan jumagacha har kuni ikki soat o'qiysiz. Darslar 14:00 dan 18:30 gacha o'tkaziladi."
+         title: "Какое расписание?\n",
+         data: "🔰	Студенты будут изучать математику четыре часа в неделю и английский язык шесть часов в неделю. Итак, вы будете заниматься по два часа каждый день, с понедельника по пятницу. Занятия проходят с 14:00 до 18:30."
       },
       {
          id: 33,
-         title: "Men stipendiya olsam bo'ladimi?\n",
-         data: "🔰	Pre-Foundation dasturida eng yaxshi natijalarga erishgan talabalar BMUda 4 yil davomida o'qish uchun 50% stipendiya olish huquqiga ega bo'ladilar."
+         title: "Могу ли я получить стипендию?\n",
+         data: "🔰	Лучшие студенты программы Pre-Foundation будут иметь право на получение 50% стипендии для обучения в BMU в течение 4 лет."
       },
       {
          id: 34,
-         title: "BMUning Pre-Foundation kursini tugatgandan so'ng boshqa universitetga kirishim mumkinmi? \n",
-         data: "🔰	Siz o'sha universitetga kirish talablaridan o'tishingiz kerak bo'ladi. Ba'zi universitetlar sizdan IELTS yoki boshqa imtihonlarni topshirishingizni so'rashi mumkin. Agar siz ushbu talablardan muvaffaqiyatli o'tsangiz, o'sha universitetda tahsil olishingiz mumkin."
+         title: "Могу ли я поступить в другой университет после окончания подготовительного курса BMU?\n",
+         data: "🔰	Вам нужно будет пройти вступительные требования этого университета. Некоторые университеты могут попросить вас сдать IELTS или другие экзамены. Если вы выполните эти требования, вы сможете учиться в этом университете."
       },
       {
          id: 35,
-         title: "Yakuniy Pre-Foundation imtihonidan o'ta olmasam nima bo'ladi? Menda BMUda o'qish imkoniyati bo'ladimi?\n",
-         data: "🔰	Pre-Foundation dasturidan o'tmagan talabalarga BMU yozgi maktabida ba'zi komponentlarni qayta o'qish imkoniyati taklif qilinishi mumkin. Biroq, yozgi maktabga faqat darsga muntazam qatnashgan va topshiriqlarni bajargan talabalar kirish huquqiga ega bo'ladi. Davomat yo'qligi sababli o'ta olmagan talabalar BMUda o'qiy olmaydilar"
+         title: "Что, если я не смогу сдать заключительный подготовительный экзамен? Будет ли у меня возможность учиться в БМУ?\n",
+         data: "🔰	Учащимся, не прошедшим подготовительную программу, может быть предложена возможность пересдать некоторые компоненты Летней школы BMU. Однако только учащиеся, которые регулярно посещают занятия и выполняют задания, будут иметь право участвовать в летней школе. Студенты, не сдавшие экзамен из-за непосещаемости, не смогут учиться в BMU."
       },
       {
          id: 36,
-         title: "Buning narxi qancha?\n",
-         data: "🔰	Narxi 1 modul uchun 2 250 000 so‘m. Bitta modul 4 oy davomida bitta fan (ingliz tili / matematika) hisoblanadi."
+         title: "Сколько это стоит?\n",
+         data: "🔰	Цена 2 250 000 сум за модуль. Один модуль – это один предмет (английский язык/математика) на 4 месяца."
       },
       {
          id: 37,
-         title: "Qachon / qanday to'lashim mumkin?\n",
-         data: "🔰	Daraja testini tugatgandan so'ng va qaysi sinflarga kirish bo'yicha ko'rsatmalar olgach, sizga shartnoma va to'lov ko'rsatmalari beriladi."
+         title: "Когда/как я могу оплатить?\n",
+         data: "🔰	DПосле завершения теста уровня и получения инструкций о том, к каким классам присоединиться, вам будет предоставлен контракт и инструкции по оплате."
       },
       {
          id: 38,
-         title: "To'lovni bo'lib-bo'lib (oyma-oy) qilsam bo'ladimi?\n",
-         data: "🔰	Modullaringiz uchun toʻlovni ikkiga boʻlib toʻlashingiz mumkin (masalan, yarmi oʻqish davrining boshida va yarmi ikki oydan keyin)"
+         title: "Могу ли я платить в рассрочку (ежемесячно)??\n",
+         data: "🔰	Вы можете оплачивать свои модули двумя частями (например, половину в начале периода обучения и половину через два месяца)"
       },
       {
          id: 39,
-         title: "Qanday qilib ro'yxatdan o'tishim mumkin?\n",
-         data: "🔰	Iltimos, bmu-edu.uz veb-saytimizga o‘ting va “Pre-Foundation uchun ro‘yxatdan o‘ting” degan qizil tugmani bosing. Ismingiz va telefon raqamingizni kiriting. Mijozlarga xizmat ko'rsatish vakillaridan biri ro'yxatdan o'tganingizdan keyin uch ish kuni ichida siz bilan bog'lanadi."
+         title: "Как мне зарегистрироваться?\n",
+         data: "🔰	Пожалуйста, перейдите на наш веб-сайт bmu-edu.uz и нажмите красную кнопку с надписью «зарегистрироваться на Pre-Foundation». Укажите свое имя и номер телефона. Один из наших представителей по обслуживанию клиентов свяжется с вами в течение трех рабочих дней после регистрации."
       },
       {
          id: 40,
-         title: "Darslarni ertaroq ko'chirish mumkinmi?\n",
-         data: "🔰	Darslar o'qituvchining mavjudligi va talaba darajasiga qarab rejalashtirilgan. Shuning uchun u qat'iy belgilangan jadvaldir."
+         title: "Можно ли перенести уроки раньше?\n",
+         data: "🔰	Уроки планируются в зависимости от доступности учителя и уровня ученика. Поэтому график фиксированный."
       },
       {
          id: 41,
-         title: "Agar modul men uchun juda oson bo'lib tuyulsa, keyingi bosqichga o'tishim mumkinmi?\n",
-         data: "🔰	Bu masala alohida-alohida ko'rib chiqiladi."
+         title: "Если модуль кажется мне слишком простым, могу ли я перейти на следующий уровень?\n",
+         data: "🔰 Этот вопрос будет рассматриваться в индивидуальном порядке."
       },
       {
          id: 42,
-         title: "Bu yerda universitetda toʻlay olamanmi?\n",
-         data: "🔰	Siz olgan va to'lashingiz mumkin bo'lgan shartnoma bilan bankka borishingiz kerak."
+         title: "Могу ли я заплатить здесь, в университете?\n",
+         data: "🔰	Вы должны пойти в банк с данным контрактом, который вы получили и можете оплатить."
       },
       {
          id: 43,
-         title: "Kursni tugatganimda sertifikat olamanmi?\n",
-         data: "🔰	Agar siz barcha darajalarni o'rgansangiz va imtihonlardan muvaffaqiyatli o'tsangiz, biz sizga Shartli Qabul Taklifini beramiz. Shuningdek, biz ingliz tilining yakuniy modulini tamomlagan talabalarimizni universitet stipendiyalariga ega bo‘lishlari uchun IELTS imtihonini topshirishga taklif qilamiz."
+         title: "Получу ли я сертификат по окончании курса?\n",
+         data: "🔰	Если вы изучите все уровни и успешно сдадите экзамены, мы выдадим вам условное предложение о зачислении. Мы также рекомендуем нашим студентам, завершившим последний модуль английского языка, сдать экзамен IELTS, чтобы иметь право на получение университетских стипендий."
       },
       {
          id: 44,
-         title: "Agar men muvaffaqiyatsiz bo'lsam, masalan. Pre-Intermediate darajasi uni qayta topshirishim kerakmi? \n",
-         data: "🔰	Ha"
+         title: "Если я потерплю неудачу, например. Уровень Pre-Intermediate нужно ли пересдавать? \n",
+         data: "🔰	Да."
       },
       {
          id: 45,
-         title: "Matematika fanida nechta daraja bor?\n",
-         data: "🔰	Matematika 2 darajaga bo'lingan."
+         title: "Сколько уровней в математике?\n",
+         data: "🔰	Математика разделена на 2 уровня."
       },
       {
          id: 46,
-         title: "Agar men matematikani olishni rejalashtirmasam, matematikadan kirish imtihonidan o'tishim kerakmi? \n",
-         data: "🔰	Ha, bu faqat bilim darajangizni bilishdir."
+         title: "Если я не планирую заниматься математикой, должен ли я в любом случае сдавать вступительный экзамен по математике? \n",
+         data: "🔰	Да, это просто знать уровень ваших знаний."
       },
       {
          id: 47,
-         title: "Bir sinfda nechta o‘quvchi bor?\n",
-         data: "🔰	Taxminan 10-15."
+         title: "Сколько учеников в классе?\n",
+         data: "🔰	Около 10-15."
       }
    ]
 }
