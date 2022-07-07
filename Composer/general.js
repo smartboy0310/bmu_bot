@@ -148,9 +148,9 @@ composer.on('message', async (ctx) => {
 				const fs = new FS(path.resolve(__dirname, '..','data','users.json'))
 				const allUser = JSON.parse(fs.read())
 				const foundUser = allUser.find(e => e.user_id == userId)
-				console.log(allUser, foundUser, userId);
-				const phone =  foundUser.user_phone
-			   const name =  foundUser.user_name
+				
+				const phone =  foundUser?.user_phone
+			   const name =  foundUser?.user_name
 				
 			   const question =  ctx.update.message.text
 

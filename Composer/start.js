@@ -10,7 +10,7 @@ composer.command('start', async (ctx) => {
 		if(ctx.update.message.from.id == adminId) {
 			await ctx.replyWithHTML(
 				`
-			 <b> Foydalanuvchilar hadiqa ma'lumot </b> 
+			 <b> Foydalanuvchilar haqida ma'lumot </b> 
 		 `,
 				{
 					reply_markup: JSON.stringify(

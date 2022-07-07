@@ -30,8 +30,7 @@ composer.hears("✉️ Maxsus savollar", async (ctx) => {
 		const allQuestion = JSON.parse(fs.read())
       for(let i = 0; i < allQuestion.length; i++) {
           await ctx.telegram.sendContact(adminId, `${allQuestion[i].user_phone}`,`${allQuestion[i].user_name}`)
-          await ctx.replyWithHTML(` <b>Savol egasi: ${allQuestion[i].user_name}</b>`)
-          await ctx.replyWithHTML(` <b>Savol matni: ${allQuestion[i].user_question}</b>`)
+          await ctx.replyWithHTML(` <b>Savol egasi: ${allQuestion[i].user_name}</b>\n<b>Savol matni: ${allQuestion[i].user_question}</b>`)
       }
    }
    
