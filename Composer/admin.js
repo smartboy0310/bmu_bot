@@ -15,6 +15,7 @@ composer.hears("👥 Foydalanuvchilar ro\'yxati", async (ctx) => {
 		const allUser = JSON.parse(fs.read())
 
       for(let i = 0; i < allUser.length; i++) {
+         
           await ctx.telegram.sendContact(adminId, `${allUser[i].user_phone}`,`${allUser[i].user_name}`)
           await ctx.replyWithHTML(` <b>Foydalanuvchi tartib raqami: ${allUser[i].user_number}</b>`)
       }
