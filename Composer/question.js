@@ -1,17 +1,15 @@
-const {Composer} = require('telegraf')
+const { Composer } = require('telegraf');
+const Extra = require('telegraf/extra');
+const Markup = require('telegraf/markup');
 
-const composer = new Composer()
+const composer = new Composer();
 
 composer.hears('📝 Maxsus savol berish', async (ctx) => {
 	await ctx.replyWithHTML(
 		`
 			<b>Savolingizni yozing!</b>
 		`,
-		{
-			reply_markup: {
-				force_reply: true,
-			},
-		},
+		Extra.markup(Markup.forceReply())
 	);
 });
 
@@ -20,11 +18,7 @@ composer.hears('📝 Ask custom question', async (ctx) => {
 		`
 			<b>Write your question!</b>
 		`,
-		{
-			reply_markup: {
-				force_reply: true,
-			},
-		},
+		Extra.markup(Markup.forceReply()),
 	);
 });
 
@@ -33,15 +27,8 @@ composer.hears('📝 Задать пользовательский вопрос'
 		`
 			<b>Напишите свой вопрос!</b>
 		`,
-		{
-			reply_markup: {
-				force_reply: true,
-			},
-		},
+		Extra.markup(Markup.forceReply()),
 	);
 });
 
-module.exports = composer
-
-
-
+module.exports = composer;

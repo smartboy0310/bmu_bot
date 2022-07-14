@@ -90,44 +90,32 @@ composer.hears('🔄 Изменить язык', async (ctx) => {
 });
 
 composer.hears("🇺🇿 O'zbekcha", async (ctx) => {
-	lang = 'uz';
+	ctx.lang = 'uz';
 	await ctx.replyWithHTML(
 		`
 		<b>Til o'zgartirildi</b>
 		`,
-		{
-			reply_markup: JSON.stringify({
-				keyboard: category.uz_keyboard,
-			}),
-		},
+		Markup.keyboard(category.uz_keyboard).oneTime().resize().extra(),
 	);
 });
 
 composer.hears('🇬🇧 English', async (ctx) => {
-	lang = 'en';
+	ctx.lang = 'en';
 	await ctx.replyWithHTML(
 		`
 		<b>The language has been changed</b>
 		`,
-		{
-			reply_markup: JSON.stringify({
-				keyboard: category.en_keyboard,
-			}),
-		},
+		Markup.keyboard(category.en_keyboard).oneTime().resize().extra(),
 	);
 });
 
 composer.hears('🇷🇺 Русский', async (ctx) => {
-	lang = 'ru';
+	ctx.lang = 'ru';
 	await ctx.replyWithHTML(
 		`
 		<b>Язык был изменен</b>
 		`,
-		{
-			reply_markup: JSON.stringify({
-				keyboard: category.ru_keyboard,
-			}),
-		},
+		Markup.keyboard(category.uz_keyboard).oneTime().resize().extra(),
 	);
 });
 

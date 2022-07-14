@@ -1,62 +1,42 @@
-const {Composer} = require('telegraf')
+const { Composer } = require('telegraf');
+const Markup = require('telegraf/markup');
 
 require('dotenv').config();
-const adminId = process.env.ADMIN_ID
+const adminId = process.env.ADMIN_ID;
 
-const composer = new Composer()
+const composer = new Composer();
 
 composer.command('start', async (ctx) => {
 	try {
-		if(ctx.update.message.from.id == adminId) {
+		if (ctx.update.message.from.id == adminId) {
 			await ctx.replyWithHTML(
 				`
 			 <b> Foydalanuvchilar haqida ma'lumot </b> 
 		 `,
-				{
-					reply_markup: JSON.stringify(
+				Markup.keyboard([
+					[
 						{
-							keyboard: [
-								[
-									{
-										text: "👥 Foydalanuvchilar ro'yxati",
-									},
-									{
-										text: "✉️ Maxsus savollar"
-									}
-								],
-							],
-							resize_keyboard: true,
+							text: "👥 Foydalanuvchilar ro'yxati",
 						},
-					)
-				},
+						{
+							text: '✉️ Maxsus savollar',
+						},
+					],
+				])
+					.oneTime()
+					.resize()
+					.extra(),
 			);
-		}
-		else {
+		} else {
 			await ctx.replyWithHTML(
 				`
 			 <b> Tilni tanlang 🇺🇿 </b>  <b> Choose language 🇬🇧 </b>  <b> Выберите язык 🇷🇺 </b>
 		 `,
-				{
-					reply_markup: {
-						inline_keyboard: [
-							[
-								{
-									text: "🇺🇿 O'zbekcha",
-									callback_data: 'uz',
-								},
-								{
-									text: '🇬🇧 English',
-									callback_data: 'en',
-								},
-								{
-									text: '🇷🇺 Русский',
-									callback_data: 'ru',
-								},
-							],
-						],
-						resize_keyboard: true,
-					},
-				},
+				Markup.inlineKeyboard([
+					Markup.callbackButton("🇺🇿 O'zbekcha", 'uz'),
+					Markup.callbackButton('🇬🇧 English', 'en'),
+					Markup.callbackButton('🇷🇺 Русский', 'ru'),
+				]).extra(),
 			);
 		}
 	} catch (e) {
@@ -64,4 +44,4 @@ composer.command('start', async (ctx) => {
 	}
 });
 
-module.exports = composer
+module.exports = composer;

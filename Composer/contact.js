@@ -1,6 +1,9 @@
-const {Composer} = require('telegraf')
+const { Composer } = require('telegraf');
+const { markup } = require('telegraf/extra');
+const Extra = require('telegraf/extra');
+const Markup = require('telegraf/markup');
 
-const composer = new Composer()
+const composer = new Composer();
 
 const category = require('../data/category');
 // const data = require('../data/data');
@@ -11,21 +14,9 @@ composer.hears('Ha ✅', async (ctx) => {
 		`
 				<b>Iltimos bog’lanish uchun kontakt qoldiring</b>
 			`,
-		{
-			reply_markup: JSON.stringify({
-				force_reply: true,
-				keyboard: [
-					[
-						{
-							text: 'Kontakt jo’natish',
-							request_contact: true,
-							one_time_keyboard: true,
-						},
-					],
-				],
-				resize_keyboard: true,
-			}),
-		},
+			Extra.markup(
+				Markup.resize().keyboard([Markup.contactRequestButton('Kontakt jo’natish')]),
+			),
 	);
 });
 
@@ -34,44 +25,19 @@ composer.hears("Yo'q ❌", async (ctx) => {
 		`
 			<b>Agar kontakt qoldirmasangiz qayta a'loqa yo'lga quya olmaymiz!</b>
 		`,
-		{
-			reply_markup: JSON.stringify({
-				force_reply: true,
-				keyboard: [
-					[
-						{
-							text: 'Kontakt jo’natish',
-							request_contact: true,
-							one_time_keyboard: true,
-						},
-					],
-				],
-				resize_keyboard: true,
-			}),
-		},
+		Extra.markup(
+			Markup.resize().keyboard([Markup.contactRequestButton('Kontakt jo’natish')]),
+		),
 	);
 });
 
 composer.hears('Yes ✅', async (ctx) => {
-	await ctx.replyWithHTML(
-		`
+	await ctx.replyWithHTML(		`
 			<b>Please leave a contact to get in touch</b>
 		`,
-		{
-			reply_markup: JSON.stringify({
-				force_reply: true,
-				keyboard: [
-					[
-						{
-							text: 'Send Contact',
-							request_contact: true,
-							one_time_keyboard: true,
-						},
-					],
-				],
-				resize_keyboard: true,
-			}),
-		},
+		Extra.markup(
+			Markup.resize().keyboard([Markup.contactRequestButton('Send contact')]),
+		),
 	);
 });
 
@@ -80,21 +46,9 @@ composer.hears('No ❌', async (ctx) => {
 		`
 			<b>If you do not leave a contact, we will not be able to contact you again!</b>
 		`,
-		{
-			reply_markup: JSON.stringify({
-				force_reply: true,
-				keyboard: [
-					[
-						{
-							text: 'Send Contact',
-							request_contact: true,
-							one_time_keyboard: true,
-						},
-					],
-				],
-				resize_keyboard: true,
-			}),
-		},
+		Extra.markup(
+			Markup.resize().keyboard([Markup.contactRequestButton('Send contact')]),
+		),
 	);
 });
 
@@ -103,21 +57,9 @@ composer.hears('Да ✅', async (ctx) => {
 		`
 			<b>Пожалуйста, оставьте контакт для связи</b>
 		`,
-		{
-			reply_markup: JSON.stringify({
-				force_reply: true,
-				keyboard: [
-					[
-						{
-							text: 'Отправить контакт',
-							request_contact: true,
-							one_time_keyboard: true,
-						},
-					],
-				],
-				resize_keyboard: true,
-			}),
-		},
+		Extra.markup(
+			Markup.resize().keyboard([Markup.contactRequestButton('Отправить контакт')]),
+		),
 	);
 });
 
@@ -126,64 +68,11 @@ composer.hears('Нет ❌', async (ctx) => {
 		`
 			<b>Если вы не оставите контакт, мы больше не сможем с вами связаться!</b>
 		`,
-		{
-			reply_markup: JSON.stringify({
-				force_reply: true,
-				keyboard: [
-					[
-						{
-							text: 'Отправить контакт',
-							request_contact: true,
-							one_time_keyboard: true,
-						},
-					],
-				],
-				resize_keyboard: true,
-			}),
-		},
+		Extra.markup(
+			Markup.resize().keyboard([Markup.contactRequestButton('Отправить контакт')]),
+		),
 	);
 });
 
-composer.hears("🇺🇿 O'zbekcha", async(ctx) => {
-	ctx.lang = 'uz'
-	await ctx.replyWithHTML(
-		`
-		<b>Til o'zgartirildi</b>
-		`,
-		{
-			reply_markup: JSON.stringify({
-				keyboard: category.uz_keyboard,
-			}),
-		},
-	);
-})
 
-composer.hears("🇬🇧 English", async(ctx) => {
-	ctx.lang = 'en'
-	await ctx.replyWithHTML(
-		`
-		<b>The language has been changed</b>
-		`,
-		{
-			reply_markup: JSON.stringify({
-				keyboard: category.en_keyboard,
-			}),
-		},
-	);
-})
-
-composer.hears("🇷🇺 Русский", async(ctx) => {
-	ctx.lang = 'ru'
-	await ctx.replyWithHTML(
-		`
-		<b>Язык был изменен</b>
-		`,
-		{
-			reply_markup: JSON.stringify({
-				keyboard: category.ru_keyboard,
-			}),
-		},
-	);
-})
-
-module.exports = composer
+module.exports = composer;

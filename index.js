@@ -4,7 +4,11 @@ require('dotenv').config();
 const token = process.env.BOT_TOKEN;
 const bot = new Telegraf(token);
 
-let lang = '';
+let lang = {
+	uz: false,
+	ru: false,
+	en: false
+};
 
 bot.use(session());
 
@@ -12,7 +16,6 @@ bot.context.lang = lang;
 
 bot.use(require('./Composer/start'));
 bot.use(require('./Composer/admin'));
-bot.use(require('./Composer/lang'));
 bot.use(require('./Composer/contact'));
 bot.use(require('./Composer/editLang'));
 bot.use(require('./Composer/question'));
