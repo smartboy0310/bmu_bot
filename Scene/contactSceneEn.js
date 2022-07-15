@@ -69,12 +69,13 @@ contactSceneEn.on('message', async (ctx) => {
 			allUser,
 		);
 	} else {
-		return ctx.scene.leave();
+		return await ctx.scene.leave();
 	}
+	return await ctx.scene.leave();
 });
 
-contactSceneEn.leave((ctx) =>
-	 ctx.replyWithHTML(
+contactSceneEn.leave(async (ctx) =>
+	await ctx.replyWithHTML(
 		`
          <b>The contact was entered incorrectly. Please try again:\n /start</b>
       `,

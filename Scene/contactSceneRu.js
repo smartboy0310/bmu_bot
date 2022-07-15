@@ -67,12 +67,13 @@ contactSceneRu.on('message', async (ctx) => {
 			allUser,
 		);
 	} else {
-		return  ctx.scene.leave();
+		 return await ctx.scene.leave();
 	}
+	return await ctx.scene.leave();
 });
 
-contactSceneRu.leave((ctx) =>
-	 ctx.replyWithHTML(
+contactSceneRu.leave(async (ctx) =>
+	 await ctx.replyWithHTML(
 		`
          <b>Контакт был введен неправильно. Пожалуйста, попробуйте еще раз:\n /start</b>
       `,
