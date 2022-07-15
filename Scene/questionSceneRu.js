@@ -32,18 +32,16 @@ questionSceneRu.on('text', async (ctx) => {
          .extra()
    );
    let newQuestion = {};
-   const userId = ctx.update.message.from.id;
+   const userId = ctx.update.message.from?.id;
 
-   const fs = new FS(
-      path.resolve(__dirname, '..', 'data', 'users.json'),
-   );
+   const fs = new FS(path.resolve(__dirname, '..', 'data', 'users.json'));
    const allUser = JSON.parse(fs.read());
    const foundUser = allUser.find((e) => e.user_id == userId);
 
    const phone = foundUser?.user_phone;
    const name = foundUser?.user_name;
 
-   const question = ctx.update.message.text;
+   const question = ctx.update.message?.text;
 
    const oldQuestion = new FS(
       path.resolve(__dirname, '..', 'data', 'question.json'),
@@ -58,15 +56,10 @@ questionSceneRu.on('text', async (ctx) => {
 
    allQuestion.push(newQuestion);
    
-   await ctx.telegram.sendMessage(
-      adminId,
-      `New Question:\n${question}\nQuestion number: ${allQuestion.length}`,
-   );
+   await ctx.telegram.sendMessage(adminId, `New Question:\n${question}\nQuestion number: ${allQuestion.length}`);
    await ctx.telegram.sendContact(adminId, `${phone}`, `${name}`);
 
-   new FS(
-      path.resolve(__dirname, '..', 'data', 'question.json'),
-   ).write(allQuestion);
+   new FS(path.resolve(__dirname, '..', 'data', 'question.json')).write(allQuestion);
    return  ctx.scene.leave()
 });
 

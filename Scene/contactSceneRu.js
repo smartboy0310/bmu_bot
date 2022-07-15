@@ -24,10 +24,10 @@ contactSceneRu.enter(async (ctx) => {
 });
 
 contactSceneRu.on('message', async (ctx) => {
-	const userContact = Number(ctx.update.message.text?.substr(1));
+	const userContact = Number(await ctx.update.message.text?.substr(1));
 
-	if (userContact || ctx.update.message?.contact) {
-		await ctx.replyWithHTML(
+	if (userContact || await ctx.update.message?.contact) {
+		await ctx.replyWithHTML( 
 			`
          <b>Вы можете получить ответы на интересующие вас вопросы</b>
          `,
@@ -48,9 +48,7 @@ contactSceneRu.on('message', async (ctx) => {
 			userId = ctx.update.message.chat?.id;
 		}
 
-		const oldUser = new FS(
-			path.resolve(__dirname, '..', 'data', 'users.json'),
-		);
+		const oldUser = new FS(path.resolve(__dirname, '..', 'data', 'users.json'));
 		const allUser = JSON.parse(oldUser.read());
 		const findData = allUser.find((e) => e.user_id == userId);
 
@@ -61,22 +59,13 @@ contactSceneRu.on('message', async (ctx) => {
 			newUser.user_number = allUser.length + 1;
 			allUser.push(newUser);
 
-			await ctx.telegram.sendMessage(
-				adminId,
-				`Info: New User\nUser serial number: ${allUser.length}`,
-			);
+			await ctx.telegram.sendMessage(adminId, `Info: New User\nUser serial number: ${allUser.length}`);
 			await ctx.telegram.sendContact(adminId, `${phone}`, `${name}`);
 		}
 
-		new FS(path.resolve(__dirname, '..', 'data', 'users.json')).write(
-			allUser,
-		);
+		new FS(path.resolve(__dirname, '..', 'data', 'users.json')).write(allUser);
 	} else {
-		await ctx.replyWithHTML(
-			`
-				<b>Контакт был введен неправильно. Пожалуйста, попробуйте еще раз:\n /start</b>
-			`,
-		);
+		await ctx.replyWithHTML(`<b>Контакт был введен неправильно. Пожалуйста, попробуйте еще раз:\n /start</b>`);
 	}
 	return await ctx.scene.leave();
 });
