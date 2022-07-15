@@ -69,17 +69,15 @@ contactSceneEn.on('message', async (ctx) => {
 			allUser,
 		);
 	} else {
-		return await ctx.scene.leave();
+		return await ctx.scene.leave(async (ctx) =>
+		await ctx.replyWithHTML(
+			`
+				<b>The contact was entered incorrectly. Please try again:\n /start</b>
+			`,
+		),);
 	}
 	return await ctx.scene.leave();
 });
 
-contactSceneEn.leave(async (ctx) =>
-	await ctx.replyWithHTML(
-		`
-         <b>The contact was entered incorrectly. Please try again:\n /start</b>
-      `,
-	),
-);
 
 module.exports = contactSceneEn;

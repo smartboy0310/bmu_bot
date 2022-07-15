@@ -67,17 +67,14 @@ contactSceneRu.on('message', async (ctx) => {
 			allUser,
 		);
 	} else {
-		 return await ctx.scene.leave();
+		 return await ctx.scene.leave(async (ctx) =>
+		 await ctx.replyWithHTML(
+			`
+				<b>Контакт был введен неправильно. Пожалуйста, попробуйте еще раз:\n /start</b>
+			`,
+		),);
 	}
 	return await ctx.scene.leave();
 });
-
-contactSceneRu.leave(async (ctx) =>
-	 await ctx.replyWithHTML(
-		`
-         <b>Контакт был введен неправильно. Пожалуйста, попробуйте еще раз:\n /start</b>
-      `,
-	),
-);
 
 module.exports = contactSceneRu;
