@@ -69,9 +69,16 @@ contactSceneEn.on('message', async (ctx) => {
 			allUser,
 		);
 	} else {
-		return await ctx.scene.leave();
+		return ctx.scene.leave();
 	}
 });
 
+contactSceneEn.leave((ctx) =>
+	 ctx.replyWithHTML(
+		`
+         <b>The contact was entered incorrectly. Please try again:\n /start</b>
+      `,
+	),
+);
 
 module.exports = contactSceneEn;

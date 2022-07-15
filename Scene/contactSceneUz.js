@@ -69,10 +69,16 @@ contactSceneUz.on('message', async (ctx) => {
 			allUser,
 		);
 	} else {
-		return await ctx.scene.leave();
+		return ctx.scene.leave();
 	}
 });
 
-
+contactSceneUz.leave( (ctx) =>
+	 ctx.replyWithHTML(
+		`
+         <b>Kontakt noto'g'ri kiritildi qayta o'rinib ko'ring:\n /start</b>
+      `,
+	),
+);
 
 module.exports = contactSceneUz;

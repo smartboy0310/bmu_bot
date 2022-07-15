@@ -67,7 +67,7 @@ questionSceneRu.on('text', async (ctx) => {
    new FS(
       path.resolve(__dirname, '..', 'data', 'question.json'),
    ).write(allQuestion);
-   return await ctx.scene.leave()
+   return  ctx.scene.leave()
 });
 
 
