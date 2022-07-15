@@ -24,7 +24,7 @@ contactSceneRu.enter(async ctx => {
 contactSceneRu.on('message', async (ctx) => {
 	const userContact = Number(ctx.update.message.text?.substr(1));
 
-	if ((userContact && (ctx.update.message.text?.length == 13 || ctx.update.message.text?.length == 12)) || ctx.update.message.contact) {
+	if (userContact  || ctx.update.message?.contact) {
 		await ctx.replyWithHTML(
 			`
          <b>Вы можете получить ответы на интересующие вас вопросы</b>
@@ -37,13 +37,13 @@ contactSceneRu.on('message', async (ctx) => {
 		let userId = ' ';
 
 		if (ctx.update.message.contact) {
-			phone = ctx.update.message.contact.phone_number;
-			name = ctx.update.message.contact.first_name;
-			userId = ctx.update.message.contact.user_id;
+			phone = ctx.update.message.contact?.phone_number;
+			name = ctx.update.message.contact?.first_name;
+			userId = ctx.update.message.contact?.user_id;
 		} else {
-			phone = ctx.update.message.text;
-			name = ctx.update.message.chat.first_name;
-			userId = ctx.update.message.chat.id;
+			phone = ctx.update.message?.text;
+			name = ctx.update.message.chat?.first_name;
+			userId = ctx.update.message.chat?.id;
 		}
 		
 		const oldUser = new FS(
@@ -67,12 +67,12 @@ contactSceneRu.on('message', async (ctx) => {
 			allUser,
 		);
 	} else {
-		return ctx.scene.leave();
+		return await ctx.scene.leave();
 	}
 });
 
-contactSceneRu.leave((ctx) =>
-	ctx.replyWithHTML(
+contactSceneRu.leave(async (ctx) =>
+	await ctx.replyWithHTML(
 		`
          <b>Контакт был введен неправильно. Пожалуйста, попробуйте еще раз:\n /start</b>
       `,

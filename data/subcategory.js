@@ -778,7 +778,7 @@ module.exports = {
 		},
 		{
 			id: 30,
-			text: '❇️ Can I join the class if I am xx years old?',
+			text: '❇️ Can I join the class if I am XX years old?',
 		},
 		{
 			id: 31,

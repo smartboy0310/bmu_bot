@@ -67,7 +67,7 @@ questionSceneUz.on('text', async (ctx) => {
    new FS(
       path.resolve(__dirname, '..', 'data', 'question.json'),
    ).write(allQuestion);
-   return ctx.scene.leave()
+   return await ctx.scene.leave()
 });
 
 
