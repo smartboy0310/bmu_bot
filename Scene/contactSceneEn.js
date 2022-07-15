@@ -73,12 +73,5 @@ contactSceneEn.on('message', async (ctx) => {
 	}
 });
 
-contactSceneEn.leave(async (ctx) =>
-	await ctx.replyWithHTML(
-		`
-         <b>The contact was entered incorrectly. Please try again:\n /start</b>
-      `,
-	),
-);
 
 module.exports = contactSceneEn;

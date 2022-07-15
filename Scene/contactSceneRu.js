@@ -71,12 +71,5 @@ contactSceneRu.on('message', async (ctx) => {
 	}
 });
 
-contactSceneRu.leave(async (ctx) =>
-	await ctx.replyWithHTML(
-		`
-         <b>Контакт был введен неправильно. Пожалуйста, попробуйте еще раз:\n /start</b>
-      `,
-	),
-);
 
 module.exports = contactSceneRu;

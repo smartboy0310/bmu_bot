@@ -73,12 +73,6 @@ contactSceneUz.on('message', async (ctx) => {
 	}
 });
 
-contactSceneUz.leave(async (ctx) =>
-	await ctx.replyWithHTML(
-		`
-         <b>Kontakt noto'g'ri kiritildi qayta o'rinib ko'ring:\n /start</b>
-      `,
-	),
-);
+
 
 module.exports = contactSceneUz;
