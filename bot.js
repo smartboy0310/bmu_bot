@@ -4,18 +4,27 @@ require('dotenv').config();
 const token = process.env.BOT_TOKEN;
 const bot = new Telegraf(token);
 
-let lang = {
-	uz: false,
-	ru: false,
-	en: false
-};
+const Stage = require('telegraf/stage')
+
+const {
+    contactSceneUz,
+    contactSceneEn,
+	 contactSceneRu,
+	 questionSceneUz,
+	 questionSceneEn, 
+	 questionSceneRu
+} = require('./Scene')
+
+const stage = new Stage([contactSceneUz, contactSceneEn, contactSceneRu, questionSceneUz, questionSceneEn, questionSceneRu])
+
+
 
 bot.use(session());
-
-bot.context.lang = lang;
+bot.use(stage.middleware())
 
 bot.use(require('./Composer/start'));
 bot.use(require('./Composer/admin'));
+bot.use(require('./Composer/lang'));
 bot.use(require('./Composer/contact'));
 bot.use(require('./Composer/editLang'));
 bot.use(require('./Composer/question'));

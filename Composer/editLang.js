@@ -1,5 +1,6 @@
-const {Composer} = require('telegraf')
-
+const {Composer} = require('telegraf');
+const Markup = require('telegraf/markup');
+const category = require('../data/category');
 const composer = new Composer()
 
 composer.hears('🔄 Tilni o’zgartirish', async (ctx) => {
@@ -115,7 +116,7 @@ composer.hears('🇷🇺 Русский', async (ctx) => {
 		`
 		<b>Язык был изменен</b>
 		`,
-		Markup.keyboard(category.uz_keyboard).oneTime().resize().extra(),
+		Markup.keyboard(category.ru_keyboard).oneTime().resize().extra(),
 	);
 });
 

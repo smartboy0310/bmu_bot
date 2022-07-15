@@ -22,6 +22,14 @@ composer.command('start', async (ctx) => {
 							text: '✉️ Maxsus savollar',
 						},
 					],
+					[
+						{
+							text: "🔍 Savollarni qidirish",
+						},
+						{
+							text: "🔍 Foydalanuvchilarni qidirish"
+						}
+					]
 				])
 					.oneTime()
 					.resize()
