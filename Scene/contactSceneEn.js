@@ -26,7 +26,7 @@ contactSceneEn.enter(async (ctx) => {
 contactSceneEn.on('message', async (ctx) => {
 	const userContact = Number(await ctx.update.message.text?.substr(1));
 
-	if (userContact || await ctx.update.message?.contact) {
+	if (userContact || (await ctx.update.message?.contact)) {
 		await ctx.replyWithHTML(
 			`
          <b>You can get answers to the questions you are interested in</b>
@@ -60,8 +60,11 @@ contactSceneEn.on('message', async (ctx) => {
 			newUser.user_phone = phone;
 			newUser.user_number = allUser.length + 1;
 			allUser.push(newUser);
-			
-			await ctx.telegram.sendMessage(adminId, `Info: New User\nUser serial number: ${allUser.length}`);
+
+			await ctx.telegram.sendMessage(
+				adminId,
+				`Info: New User\nUser serial number: ${allUser.length}`,
+			);
 			await ctx.telegram.sendContact(adminId, `${phone}`, `${name}`);
 		}
 
@@ -69,15 +72,13 @@ contactSceneEn.on('message', async (ctx) => {
 			allUser,
 		);
 	} else {
-		return await ctx.scene.leave(async (ctx) =>
 		await ctx.replyWithHTML(
 			`
 				<b>The contact was entered incorrectly. Please try again:\n /start</b>
 			`,
-		),);
+		);
 	}
 	return await ctx.scene.leave();
 });
-
 
 module.exports = contactSceneEn;

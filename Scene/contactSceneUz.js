@@ -10,8 +10,8 @@ const Extra = require('telegraf/extra');
 
 const contactSceneUz = new Scene('contactSceneUz');
 
-contactSceneUz.enter(async ctx => {
-	 await ctx.replyWithHTML(
+contactSceneUz.enter(async (ctx) => {
+	await ctx.replyWithHTML(
 		`
 				<b>Iltimos bog’lanish uchun kontakt qoldiring</b>
 			`,
@@ -26,7 +26,7 @@ contactSceneUz.enter(async ctx => {
 contactSceneUz.on('message', async (ctx) => {
 	const userContact = Number(await ctx.update.message.text?.substr(1));
 
-	if (userContact || await ctx.update.message?.contact) {
+	if (userContact || (await ctx.update.message?.contact)) {
 		await ctx.replyWithHTML(
 			`
          <b>O’zingizni qiziqtirgan savollarga javob olishgiz mumkin</b>
@@ -47,7 +47,7 @@ contactSceneUz.on('message', async (ctx) => {
 			name = ctx.update.message.chat?.first_name;
 			userId = ctx.update.message.chat?.id;
 		}
-		
+
 		const oldUser = new FS(
 			path.resolve(__dirname, '..', 'data', 'users.json'),
 		);
@@ -60,21 +60,23 @@ contactSceneUz.on('message', async (ctx) => {
 			newUser.user_phone = phone;
 			newUser.user_number = allUser.length + 1;
 			allUser.push(newUser);
-			
-			await ctx.telegram.sendMessage(adminId, `Info: New User\nUser serial number: ${allUser.length}`	);
-			await ctx.telegram.sendContact(adminId, `${phone}`, `${name}`)	
+
+			await ctx.telegram.sendMessage(
+				adminId,
+				`Info: New User\nUser serial number: ${allUser.length}`,
+			);
+			await ctx.telegram.sendContact(adminId, `${phone}`, `${name}`);
 		}
 
 		new FS(path.resolve(__dirname, '..', 'data', 'users.json')).write(
 			allUser,
 		);
 	} else {
-		return await ctx.scene.leave(async (ctx) =>
 		await ctx.replyWithHTML(
 			`
 				<b>Kontakt noto'g'ri kiritildi qayta o'rinib ko'ring:\n /start</b>
 			`,
-		),);
+		);
 	}
 	return await ctx.scene.leave();
 });

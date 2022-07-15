@@ -10,13 +10,15 @@ const Extra = require('telegraf/extra');
 
 const contactSceneRu = new Scene('contactSceneRu');
 
-contactSceneRu.enter(async ctx => {
+contactSceneRu.enter(async (ctx) => {
 	await ctx.replyWithHTML(
 		`
 			<b>Пожалуйста, оставьте контакт для связи</b>
 		`,
 		Extra.markup(
-			Markup.resize().keyboard([Markup.contactRequestButton('Отправить контакт')]),
+			Markup.resize().keyboard([
+				Markup.contactRequestButton('Отправить контакт'),
+			]),
 		),
 	);
 });
@@ -24,7 +26,7 @@ contactSceneRu.enter(async ctx => {
 contactSceneRu.on('message', async (ctx) => {
 	const userContact = Number(ctx.update.message.text?.substr(1));
 
-	if (userContact  || ctx.update.message?.contact) {
+	if (userContact || ctx.update.message?.contact) {
 		await ctx.replyWithHTML(
 			`
          <b>Вы можете получить ответы на интересующие вас вопросы</b>
@@ -45,7 +47,7 @@ contactSceneRu.on('message', async (ctx) => {
 			name = ctx.update.message.chat?.first_name;
 			userId = ctx.update.message.chat?.id;
 		}
-		
+
 		const oldUser = new FS(
 			path.resolve(__dirname, '..', 'data', 'users.json'),
 		);
@@ -58,8 +60,11 @@ contactSceneRu.on('message', async (ctx) => {
 			newUser.user_phone = phone;
 			newUser.user_number = allUser.length + 1;
 			allUser.push(newUser);
-			
-			await ctx.telegram.sendMessage(adminId, `Info: New User\nUser serial number: ${allUser.length}`);
+
+			await ctx.telegram.sendMessage(
+				adminId,
+				`Info: New User\nUser serial number: ${allUser.length}`,
+			);
 			await ctx.telegram.sendContact(adminId, `${phone}`, `${name}`);
 		}
 
@@ -67,12 +72,11 @@ contactSceneRu.on('message', async (ctx) => {
 			allUser,
 		);
 	} else {
-		 return await ctx.scene.leave(async (ctx) =>
-		 await ctx.replyWithHTML(
+		await ctx.replyWithHTML(
 			`
 				<b>Контакт был введен неправильно. Пожалуйста, попробуйте еще раз:\n /start</b>
 			`,
-		),);
+		);
 	}
 	return await ctx.scene.leave();
 });
