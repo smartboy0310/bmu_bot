@@ -26,5 +26,26 @@
         "user_question": "Yangi foydalanuvchi bordimi",
         "question_number": 4,
         "user_id": 119621437
+    },
+    {
+        "user_name": "Azamat",
+        "user_phone": "+998998760310",
+        "user_question": "wewewewew",
+        "question_number": 5,
+        "user_id": 119621437
+    },
+    {
+        "user_name": "Azamat",
+        "user_phone": "+998998760310",
+        "user_question": "wedwqdeqwdrqwdrqwdrqw",
+        "question_number": 6,
+        "user_id": 119621437
+    },
+    {
+        "user_name": "Asrbek",
+        "user_phone": "998941626021",
+        "user_question": "Savol javob",
+        "question_number": 7,
+        "user_id": 5566715537
     }
 ]
