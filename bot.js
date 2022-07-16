@@ -1,6 +1,6 @@
 const { Telegraf, session } = require('telegraf');
 require('dotenv').config();
-
+const { telegrafThrottler } = require('telegraf-throttler');
 const token = process.env.BOT_TOKEN;
 const bot = new Telegraf(token);
 
@@ -30,6 +30,7 @@ const stage = new Stage([
 
 bot.use(session());
 bot.use(stage.middleware());
+bot.use(telegrafThrottler());
 
 bot.use(require('./Composer/start'));
 bot.use(require('./Composer/admin'));
