@@ -24,11 +24,12 @@ composer.command('start', async (ctx) => {
 					],
 					[
 						{
-							text: "🔍 Savollarni qidirish",
+							text: "🔍 Foydalanuvchilarni qidirish"
 						},
 						{
-							text: "🔍 Foydalanuvchilarni qidirish"
+							text: "🔍 Savollarni qidirish",
 						}
+						
 					]
 				])
 					.oneTime()

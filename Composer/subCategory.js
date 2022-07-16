@@ -53,9 +53,7 @@ for (let i = 0; i < subCategory.en_subcategory.length; i++) {
 for (let i = 0; i < subCategory.ru_subcategory.length; i++) {
 	composer.hears(`${subCategory.ru_subcategory[i].text}`, async (ctx) => {
 
-		const findInfo = data.subCate_data.ru_data.find(
-			(e) => e.id == subCategory.ru_subcategory[i].id,
-		);
+		const findInfo = data.subCate_data.ru_data.find((e) => e.id == subCategory.ru_subcategory[i].id);
 		if(subCategory.ru_subcategory[i].text == '❇️ Локация') {
 			await ctx.replyWithHTML(
 				`<b>${findInfo?.title}</b>\n${findInfo?.data}`,

@@ -5,5 +5,26 @@
         "user_question": "Assalomu alaykum, bu faqat test uchun",
         "question_number": 1,
         "user_id": 1258084666
+    },
+    {
+        "user_name": "Azamat",
+        "user_phone": "+998998760310",
+        "user_question": "binnimaaaaaa",
+        "question_number": 2,
+        "user_id": 119621437
+    },
+    {
+        "user_name": "Azamat",
+        "user_phone": "+998998760310",
+        "user_question": "fdfdsfsdfsdfsdfsdfdsfsdfsd",
+        "question_number": 3,
+        "user_id": 119621437
+    },
+    {
+        "user_name": "Azamat",
+        "user_phone": "+998998760310",
+        "user_question": "Yangi foydalanuvchi bordimi",
+        "question_number": 4,
+        "user_id": 119621437
     }
 ]
