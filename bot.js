@@ -17,7 +17,8 @@ const {
 	questionSceneEn,
 	questionSceneRu,
 	searchQuestionScene,
-	searchUserScene
+	searchUserScene,
+	answerScene
 } = require('./Scene');
 
 const stage = new Stage([
@@ -28,7 +29,8 @@ const stage = new Stage([
 	questionSceneEn,
 	questionSceneRu,
 	searchQuestionScene,
-	searchUserScene
+	searchUserScene,
+	answerScene
 ]);
 
 bot.use(session());

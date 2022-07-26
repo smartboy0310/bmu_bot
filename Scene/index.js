@@ -6,6 +6,7 @@ const questionSceneEn = require('./questionSceneEn')
 const questionSceneRu = require('./questionSceneRu')
 const searchQuestionScene = require('./searchQuestionScene')
 const searchUserScene = require('./searchUserScene')
+const answerScene = require('./answerScene')
 
 module.exports = {
     contactSceneUz,
@@ -15,5 +16,6 @@ module.exports = {
     questionSceneEn,
     questionSceneRu,
     searchQuestionScene,
-    searchUserScene
+    searchUserScene,
+    answerScene
 }
