@@ -2,6 +2,7 @@ const { Composer } = require('telegraf');
 require('dotenv').config();
 const FS = require('../fs/fs');
 const path = require('path');
+const Markup = require('telegraf/markup');
 
 const adminId = process.env.ADMIN_ID;
 
@@ -37,6 +38,9 @@ composer.hears('✉️ Maxsus savollar', async (ctx) => {
 			for (let i = 0; i < allQuestion?.length; i++) {
 				await ctx.replyWithHTML(
 					` <b>Savol egasi: ${allQuestion[i]?.user_name}</b>\n<b>Savol matni: ${allQuestion[i]?.user_question}</b>\n<b>Foydalanuvchi telefon raqami: ${allQuestion[i]?.user_phone}</b>`,
+					Markup.inlineKeyboard([
+						Markup.callbackButton('✏️ Javob Yozish', `${allQuestion[i]?.user_id}`),
+					]).extra(),
 				);
 			}
 		}

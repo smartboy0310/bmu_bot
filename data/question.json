@@ -1,107 +1,30 @@
 [
     {
-        "user_name": "Asrbek",
-        "user_phone": "998993446768",
-        "user_question": "Assalomu alaykum, bu faqat test uchun",
+        "user_name": "Azamat",
+        "user_phone": "998998760310",
+        "user_question": "Tayyor tekshirib ko'ring!",
         "question_number": 1,
-        "user_id": 1258084666
+        "user_id": 119621437
     },
     {
         "user_name": "Azamat",
-        "user_phone": "+998998760310",
-        "user_question": "binnimaaaaaa",
+        "user_phone": "998998760310",
+        "user_question": "Javobini aytib yuboring bot orqali",
         "question_number": 2,
         "user_id": 119621437
     },
     {
         "user_name": "Azamat",
-        "user_phone": "+998998760310",
-        "user_question": "fdfdsfsdfsdfsdfsdfdsfsdfsd",
+        "user_phone": "998998760310",
+        "user_question": "Alohida alohida qilib",
         "question_number": 3,
         "user_id": 119621437
     },
     {
-        "user_name": "Azamat",
-        "user_phone": "+998998760310",
-        "user_question": "Yangi foydalanuvchi bordimi",
+        "user_name": "Dilshodbek",
+        "user_phone": "998332006871",
+        "user_question": ".",
         "question_number": 4,
-        "user_id": 119621437
-    },
-    {
-        "user_name": "Azamat",
-        "user_phone": "+998998760310",
-        "user_question": "wewewewew",
-        "question_number": 5,
-        "user_id": 119621437
-    },
-    {
-        "user_name": "Azamat",
-        "user_phone": "+998998760310",
-        "user_question": "wedwqdeqwdrqwdrqwdrqw",
-        "question_number": 6,
-        "user_id": 119621437
-    },
-    {
-        "user_name": "Asrbek",
-        "user_phone": "998941626021",
-        "user_question": "Savol javob",
-        "question_number": 7,
-        "user_id": 5566715537
-    },
-    {
-        "user_name": "MAFTUNA UMAROVNA",
-        "user_phone": "998996254694",
-        "user_question": "Assalomu alaykum",
-        "question_number": 8,
-        "user_id": 346790521
-    },
-    {
-        "user_name": "MAFTUNA UMAROVNA",
-        "user_phone": "998996254694",
-        "user_question": "Assalomu alaykum va rohmatulloh",
-        "question_number": 9,
-        "user_id": 346790521
-    },
-    {
-        "user_name": "MAFTUNA UMAROVNA",
-        "user_phone": "998996254694",
-        "user_question": "Assalomu alaykum va rohmatullohi va barokatuh",
-        "question_number": 10,
-        "user_id": 346790521
-    },
-    {
-        "user_name": "MAFTUNA UMAROVNA",
-        "user_phone": "998996254694",
-        "user_question": "Assalomu",
-        "question_number": 11,
-        "user_id": 346790521
-    },
-    {
-        "user_name": "MAFTUNA UMAROVNA",
-        "user_phone": "998996254694",
-        "user_question": "Assalomu alaykum",
-        "question_number": 12,
-        "user_id": 346790521
-    },
-    {
-        "user_name": "MAFTUNA UMAROVNA",
-        "user_phone": "998996254694",
-        "user_question": "Assalomu alaykum",
-        "question_number": 13,
-        "user_id": 346790521
-    },
-    {
-        "user_name": "MAFTUNA UMAROVNA",
-        "user_phone": "998996254694",
-        "user_question": "Hello",
-        "question_number": 14,
-        "user_id": 346790521
-    },
-    {
-        "user_name": "Azamat",
-        "user_phone": "998998760310",
-        "user_question": "Hello Arsbek Good Morning.",
-        "question_number": 15,
-        "user_id": 119621437
+        "user_id": 1719359009
     }
 ]
